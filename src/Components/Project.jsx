@@ -35,7 +35,7 @@ const Project = () => {
   return (
     <div
       name="projects"
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white pt-[75px] md:pb-14 lg:pb-20"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white pt-[83px] md:pb-14 lg:pb-14"
       ref={ref}
     >
       <motion.div

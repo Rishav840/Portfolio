@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full bg-gradient-to-b from-black to-gray-800 pt-[75px] text-white"
+      className="w-full bg-gradient-to-b from-black to-gray-800 pt-[83px] text-white"
       ref={ref}
     >
       <div className="flex flex-col justify-center container">

@@ -67,7 +67,7 @@ const Skill = () => {
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-gray-800 to-black w-full pt-[75px] md:pb-14 lg:pb-20"
+      className="bg-gradient-to-b from-gray-800 to-black w-full pt-[83px] md:pb-14 lg:pb-14"
       ref={ref}
     >
       <motion.div

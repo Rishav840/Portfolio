@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full bg-gradient-to-b from-gray-800 to-black text-white pt-[75px] md:pb-14 lg:pb-20"
+      className="w-full bg-gradient-to-b from-gray-800 to-black text-white pt-[83px] md:pb-14 lg:pb-14"
       ref={ref}
     >
       <motion.div
