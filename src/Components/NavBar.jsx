@@ -47,26 +47,26 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[9999] bg-black ${
-        scrolled ? "shadow-2xl shadow-gray-500/20" : ""
+      className={`fixed top-0 left-0 right-0 z-[9999]  ${
+        scrolled ? "bg-transparent backdrop-blur-lg" : "bg-black"
       } duration-300`}
     >
-      <nav className="relative flex justify-between items-center w-full text-white p-5 container">
+      <nav className="relative flex justify-between items-center w-full text-white p-5 container flex-wrap">
         <div>
           <h1 className="text-2xl">Rishav</h1>
         </div>
 
         <ul
-          className={`absolute top-full left-0 right-0 bg-black md:flex md:space-x-5 md:static overflow-hidden duration-300 ${
+          className={`order-1 w-full md:w-auto bg-transparent md:flex md:space-x-5 md:static overflow-hidden duration-300 ${
             nav ? "h-[216px]" : "h-0"
           } md:h-auto`}
         >
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className=" cursor-pointer text-gray-500 hover:text-white duration-100 uppercase  "
+              className=" cursor-pointer text-gray-500 hover:text-white duration-100 uppercase first:pt-5 md:first:pt-0 "
             >
-                <Link onClick={()=> setNav(!nav)} className=" md:px-2 p-2 px-5 block " to={link} smooth duration={500}>{link}</Link>
+                <Link onClick={()=> setNav(!nav)} className=" md:px-2 p-2 px-5 pl-0 block " to={link} smooth duration={500}>{link}</Link>
               
             </li>
           ))}

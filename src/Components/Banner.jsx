@@ -12,7 +12,7 @@ const Banner = () => {
   return (
     <div
       name="home"
-      className="w-full bg-gradient-to-b from-black via-black to-gray-800 pt-[72px]  md:py-14 lg:py-14"
+      className="w-full bg-gradient-to-b from-black via-black to-gray-800 pt-[72px]  md:pb-14 md:pt-[80px] "
       ref={ref}
     >
       <motion.div
