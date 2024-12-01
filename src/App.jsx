@@ -1,7 +1,7 @@
 import NavBar from "./Components/NavBar";
 import Banner from "./Components/Banner";
 import About from "./Components/About";
-import SocialLinks from "./Components/Sociallinks";
+import SocialmLinks from "./Components/SocialmLinks";
 import Contact from "./Components/Contact";
 import Project from "./Components/Project";
 import Skill from "./Components/Skill";
@@ -16,7 +16,7 @@ function App() {
       <Banner/>
       <About/>
       <Project/>
-      <SocialLinks/>
+      <SocialmLinks/>
       <Skill/>
       <Contact/>
 
