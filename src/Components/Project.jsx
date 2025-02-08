@@ -4,6 +4,7 @@ import Burger from "../assets/portfolio/Burger.png";
 import poxymon from "../assets/portfolio/poxymon.png";
 import designwindow from "../assets/portfolio/designwindow.png";
 import mendy from "../assets/portfolio/mendy.png";
+import Handle from "../assets/portfolio/Handle.png";
 
 const Project = () => {
   const ref = useRef(null);
