@@ -47,8 +47,8 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[9999]  ${
-        scrolled ? "bg-transparent backdrop-blur-lg" : "bg-black"
+      className={`fixed top-0 left-0 right-0 z-[9999] bg-transparent backdrop-blur-lg  ${
+        scrolled ? "bg-transparent backdrop-blur-lg" : ""
       } duration-300`}
     >
       <nav className="relative flex justify-between items-center w-full text-white p-5 container flex-wrap">

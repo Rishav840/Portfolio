@@ -30,6 +30,11 @@ const Project = () => {
       src: mendy,
       href: "https://sandbox.clservicesny.com/mendy/",
     },
+    {
+      id: 5,
+      src: Handle,
+      href: "https://sandbox.clservicesny.com/handle/",
+    },
   ];
 
   return (
