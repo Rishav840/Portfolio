@@ -40,8 +40,7 @@ const Banner = () => {
                 1000,
                 "Designer",
                 1000,
-                "Freelancer",
-                1000,
+                
               ]}
               className="text-gray-500 text-[2rem] lg:text-[3rem] ml-2.5"
               wrapper="span"
