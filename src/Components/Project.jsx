@@ -5,6 +5,8 @@ import poxymon from "../assets/portfolio/poxymon.png";
 import designwindow from "../assets/portfolio/designwindow.png";
 import mendy from "../assets/portfolio/mendy.png";
 import Handle from "../assets/portfolio/Handle.png";
+import chatMate from "../assets/portfolio/chatMate.png";
+import whatsappAgent from "../assets/portfolio/whatsappAgent.png";
 
 const Project = () => {
   const ref = useRef(null);
@@ -13,18 +15,18 @@ const Project = () => {
   const portfolios = [
     {
       id: 1,
-      src: Burger,
-      href: "https://bigburgerwebsite.netlify.app/",
+      src: chatMate,
+      href: "https://chat-mate-tau.vercel.app/",
     },
     {
       id: 2,
-      src: poxymon,
-      href: "https://sandbox.clservicesny.com/poxymon/",
+      src: whatsappAgent,
+      href: "https://whatsapp-agent-ten-gamma.vercel.app/",
     },
     {
       id: 3,
-      src: designwindow,
-      href: "https://sandbox.clservicesny.com/design_window/",
+      src: poxymon,
+      href: "https://sandbox.clservicesny.com/poxymon/",
     },
     {
       id: 4,
@@ -33,8 +35,18 @@ const Project = () => {
     },
     {
       id: 5,
+      src: designwindow,
+      href: "https://sandbox.clservicesny.com/design_window/",
+    },
+     {
+      id: 6,
       src: Handle,
       href: "https://sandbox.clservicesny.com/handle/",
+    },
+    {
+      id: 7,
+      src: Burger,
+      href: "https://bigburgerwebsite.netlify.app/",
     },
   ];
 
@@ -56,10 +68,10 @@ const Project = () => {
           transition={{ duration: 0.6 }}
           className="pb-8"
         >
-          <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-500">
+          <h2 className="text-3xl md:text-4xl font-bold text-white inline pb-2 border-b-2 border-gray-400">
             Projects
-          </p>
-          <p className="py-6">Check out some of my work right here</p>
+          </h2>
+          <p className="py-6 text-gray-400">Check out some of my work right here</p>
         </motion.div>
 
         <motion.div

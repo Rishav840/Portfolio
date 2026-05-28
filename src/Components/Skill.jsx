@@ -1,13 +1,18 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import html from "../assets/images/html.png";
-import css from "../assets/images/css.png";
-import javascript from "../assets/images/javascript.png";
-import reactImage from "../assets/images/react.png";
-import github from "../assets/images/github.png";
-import tailwind from "../assets/images/tailwind.png";
-import cpp from "../assets/images/cpp.png";
-import node from "../assets/images/node.png";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiGithub,
+  SiExpress,
+} from "react-icons/si";
 
 const Skill = () => {
   const ref = useRef(null);
@@ -15,59 +20,76 @@ const Skill = () => {
   const techs = [
     {
       id: 1,
-      src: html,
+      icon: SiHtml5,
       title: "HTML",
-      style: "shadow-orange-500",
+      color: "text-orange-500",
     },
     {
       id: 2,
-      src: css,
+      icon: SiCss3,
       title: "CSS",
-      style: "shadow-blue-500",
+      color: "text-blue-500",
     },
     {
       id: 3,
-      src: javascript,
+      icon: SiJavascript,
       title: "JavaScript",
-      style: "shadow-yellow-500",
+      color: "text-yellow-400",
     },
     {
       id: 4,
-      src: reactImage,
-      title: "React",
-      style: "shadow-[#00d8ff]",
+      icon: SiTypescript,
+      title: "TypeScript",
+      color: "text-blue-600",
     },
     {
       id: 5,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-[#44a8b3]",
+      icon: SiReact,
+      title: "React",
+      color: "text-cyan-500",
     },
     {
       id: 6,
-      src: github,
-      title: "GitHub",
-      style: "shadow-gray-400",
+      icon: SiNextdotjs,
+      title: "Next.js",
+      color: "text-white",
     },
     {
       id: 7,
-      src: node,
-      title: "Nodejs",
-      style: "shadow-[#8cc84b]",
+      icon: SiTailwindcss,
+      title: "Tailwind",
+      color: "text-cyan-400",
     },
     {
       id: 8,
-      src: cpp,
-      title: "C++",
-      style: "shadow-[#659bd3]",
-      shado: "shadow-red-700",
+      icon: SiNodedotjs,
+      title: "Node.js",
+      color: "text-green-600",
+    },
+    {
+      id: 9,
+      icon: SiExpress,
+      title: "Express.js",
+      color: "text-gray-400",
+    },
+    {
+      id: 10,
+      icon: SiPostgresql,
+      title: "PostgreSQL",
+      color: "text-blue-700",
+    },
+    {
+      id: 11,
+      icon: SiGithub,
+      title: "GitHub",
+      color: "text-gray-300",
     },
   ];
 
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-gray-800 to-black w-full pt-[83px] md:pb-14 lg:pb-14"
+      className="bg-gradient-to-b from-gray-800 to-black w-full pt-[83px] md:pb-20 lg:pb-20"
       ref={ref}
     >
       <motion.div
@@ -80,12 +102,12 @@ const Skill = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.6 }}
-          className="pb-8"
+          className="pb-12"
         >
-          <p className="text-3xl md:text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Skills
-          </p>
-          <p className="py-6">These are the technologies I've worked with</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white inline pb-2 border-b-2 border-gray-400">
+            Tech Stack
+          </h2>
+          <p className="py-6 text-gray-400">Technologies and tools I've mastered</p>
         </motion.div>
 
         <motion.div
@@ -97,24 +119,33 @@ const Skill = () => {
               opacity: 1,
               scale: 1,
               transition: {
-                staggerChildren: 0.2,
+                staggerChildren: 0.12,
               },
             },
           }}
-          className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center sm:px-0"
+          className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:px-0"
         >
-          {techs.map(({ id, src, title, style, shado }) => (
+          {techs.map(({ id, icon: Icon, title, color }) => (
             <motion.div
               key={id}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: id * 0.1 }}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style} hover:${
-                shado ? shado : ""
-              }`}
+              transition={{ duration: 0.5, delay: id * 0.08 }}
+              className="group relative"
+              whileHover={{ y: -8 }}
             >
-              <img src={src} alt={title} className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20 h-full flex flex-col items-center justify-center">
+                <div className="relative mb-3">
+                  <div className="absolute inset-0 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:blur-xl bg-gradient-to-br from-cyan-500/30 to-blue-500/30"></div>
+                  <Icon
+                    size={48}
+                    className={`relative ${color} group-hover:scale-110 transition-transform duration-300`}
+                  />
+                </div>
+                <p className="text-gray-300 font-semibold text-center text-sm group-hover:text-cyan-400 transition-colors duration-300">
+                  {title}
+                </p>
+              </div>
             </motion.div>
           ))}
         </motion.div>

@@ -18,10 +18,10 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="pb-8"
         >
-          <p className="text-3xl md:text-4xl font-bold inline border-b-4 border-gray-500">
+          <h2 className="text-3xl md:text-4xl font-bold text-white inline pb-2 border-b-2 border-gray-400">
             Contact
-          </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
+          </h2>
+          <p className="py-6 text-gray-400">Submit the form below to get in touch with me</p>
         </motion.div>
 
         <motion.div
@@ -31,7 +31,7 @@ const Contact = () => {
           className="flex flex-col md:flex-row justify-between"
         >
           <div className="w-full">
-            <p className="text-[50px] font-semibold pb-10 leading-[1]">Let's work together</p>
+            <h3 className="text-4xl md:text-5xl font-bold text-white pb-10">Let's work together</h3>
           </div>
           <form
             action="https://getform.io/f/bollkgwa"
