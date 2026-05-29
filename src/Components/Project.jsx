@@ -21,7 +21,7 @@ const Project = () => {
     {
       id: 2,
       src: whatsappAgent,
-      href: "https://whatsapp-agent-ten-gamma.vercel.app/",
+      href: "https://whatsapp-agent-ashy.vercel.app/",
     },
     {
       id: 3,
